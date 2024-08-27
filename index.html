@@ -1,57 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
-    <link rel="stylesheet" href="https://raman-site.github.io./index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Yeon+Sung&display=swap">
-    <title>라만</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="https://www.twitch.tv/0raman0"><i class="fab fa-twitch"></i> 트위치</a></li>
-                <li><a href="https://www.youtube.com/@_Raman"><i class="fab fa-youtube"></i> 유튜브</a></li>
-                <li><a href="https://twitter.com/_Raman0"><i class="fab fa-twitter"></i> 트위터</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="section1">
-        <div class="profile-picture">
-            <p class="raman">
-                <span>Raman</span>
-            </p>
-        </div>
-    </section>
-    <section id="section2">
-        <div class="profile-details">
-            <div class="profile-title">
-                <p>프로필</p>
-            </div>
-            <div class="profile-info">
-                <p id="debut-day">데뷔일: <span id="days-left"></span></p>
-                <p>이름: 라만</p>
-                <p>종족: 늑대</p>
-                <p>팬덤명: 털뭉치</p>
-            </div>
-        </div>
-    </section>
-    <section id="section3">
-        <div class="profile-image">
-            <img src="https://raman-site.github.io/html/라만2.jpeg" alt="Profile Picture">
-        </div>
-        <div class="intro">
-            <h2>자기소개</h2>
-            <p>안녕하세요! 저는 라만이라고 합니다. 늑대 종족으로, 팬덤명은 '털뭉치'입니다. 다양한 콘텐츠를 통해 여러분과 소통하고, 즐거운 시간을 보내고 싶습니다. 제 활동을 지켜봐 주세요!</p>
-        </div>
-    </section>
-    <footer>
-        <p>제작일: 2023-11-15</p>
-        <p>제작자: 사베</p>
-        <p>Email: dlk0909naver.com</p>
-    </footer>
-    <script src="https://raman-site.github.io/html/raman.js"></script>
-</body>
-</html>
+/* 일반 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('https://raman-site.github.io/html/Kaushan_Script/KaushanScript-Regular.woff') format('woff'),
+         url('https://raman-site.github.io/html/Kaushan_Script/AnyConv.com__KaushanScript-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yeon Sung';
+    src: url('https://raman-site.github.io/html/Yeon_Sung/YeonSung-Regular.woff') format('woff'),
+         url('https://raman-site.github.io/html/Yeon_Sung/AnyConv.com__YeonSung-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background-color: #6c96FA;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Yeon Sung";
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Yeon Sung";
+}
+
+footer p {
+    margin: 0 10px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    background-image: none;
+}
+
+#section1 {
+    background-image: url('https://raman-site.github.io/html/라만2.jpeg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#section1 .profile-picture {
+    position: relative;
+    z-index: 1;
+    left: -20%;
+    font-size: 15vw;
+}
+
+#section1 .profile-picture span {
+    font-weight: bold;
+    color: #fff;
+}
+
+#section1 .raman span {
+    font-family: 'Kaushan Script';
+}
+
+#section2 {
+    background-image: url('https://raman-site.github.io/html/라만1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #fff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vw;
+    padding-top: 20px;
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Yeon Sung";
+}
+
+#section2 {
+    font-size: 5vw;
+}
+
+.profile-title {
+    font-size: 5vw;
+}
+
+.profile-info {
+    text-align: left;
+    margin-top: 5px;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    line-height: 90%;
+}
+
+#d-day {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #6c96FA;
+    color: #fff;
+    text-align: center;
+    padding: 1vw;
+}
+
+/* 섹션3 스타일 */
+#section3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.intro {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    font-family: "Yeon Sung";
+}
+
+.intro h2 {
+    margin-top: 0;
+    font-family: 'Kaushan Script';
+}
+
+.intro p {
+    font-family: 'Yeon Sung';
+}
+
+.profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
