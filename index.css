@@ -148,13 +148,12 @@ footer {
     padding: 1vw;
 }
 
-/* 섹션3 스타일 */
 #section3 {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     background-color: #f9f9f9;
-    flex-direction: row-reverse; /* 이 부분은 이제 필요하지 않음 */
+    flex-direction: row; /* 기본값으로 설정 */
 }
 
 .intro {
