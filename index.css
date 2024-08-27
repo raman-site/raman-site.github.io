@@ -110,13 +110,9 @@ section {
     padding-top: 20px;
 
 }
-#section3 .border {
-  border-width: 10px;
-  border-color: black;
-  border-style: solid;
-  width: 100px;
-  height: 100px;
+#section3{
 }
+.
 .profile-details {
     display: flex;
     align-items: center;
