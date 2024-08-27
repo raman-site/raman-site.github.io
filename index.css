@@ -149,10 +149,16 @@ footer {
 }
 
 #section3 {
+    background-image: url('https://raman-site.github.io/html/라만2.jpeg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vw;
+    color: #fff;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .intro {
