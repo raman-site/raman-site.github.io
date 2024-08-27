@@ -110,14 +110,13 @@ section {
     padding-top: 20px;
 
 }
-#section3{
+#section3.white-box {
+	background: white;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0.5px 0.5px 2px 1px #eee;
 }
-.shape1{
-    width: 100px;
-  height: 100px;
-  background-color: blue;
-  border-radius: 50%;
-}
+
 .profile-details {
     display: flex;
     align-items: center;
