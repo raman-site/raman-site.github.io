@@ -154,6 +154,7 @@ footer {
     justify-content: space-between;
     padding: 20px;
     background-color: #f9f9f9;
+    flex-direction: row-reverse; /* 이 부분은 이제 필요하지 않음 */
 }
 
 .intro {
