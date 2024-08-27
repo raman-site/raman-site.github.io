@@ -2,9 +2,10 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* 기본 폰트 */
     background-color: #f0f0f0;
 }
+
 @font-face {
     font-family: 'Kaushan Script';
     src: url('https://raman-site.github.io/html/Kaushan_Script/KaushanScript-Regular.woff') format('woff'),
@@ -12,6 +13,7 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Yeon Sung';
     src: url('https://raman-site.github.io/html/Yeon_Sung/YeonSung-Regular.woff') format('woff'),
@@ -19,21 +21,17 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-header {
+
+/* header와 footer는 Yeon Sung 폰트를 사용 */
+header, footer {
+    font-family: 'Yeon Sung', sans-serif;
     background-color: #6c96FA;
     color: #fff;
     padding: 10px 20px;
-    font-family: "Yeon Sung";
+    text-align: center;
 }
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: "Yeon Sung";
-}
-footer p {
-    margin: 0 10px; /* 좌우 여백을 조절하려면 이 값을 조정하세요 */
-}
+
+/* nav 스타일 */
 nav {
     text-align: right;
 }
@@ -49,19 +47,14 @@ nav ul li {
     margin-left: 10px;
 }
 
-nav ul li:first-child {
-    margin-left: 0;
-}
-
 nav ul li a {
     text-decoration: none;
     color: #fff;
 }
 
+/* section 스타일 */
 section {
-    height: 100vh;
     padding: 20px;
-    background-image: none;
 }
 
 #section1 {
@@ -78,88 +71,60 @@ section {
 }
 
 #section1 .profile-picture {
-    position: relative;
-    z-index: 1;
-    left: -20%;
+    font-family: 'Kaushan Script', cursive; /* 특정 폰트 적용 */
     font-size: 15vw;
+    left: -20%;
 }
 
-#section1 .profile-picture span {
-    font-weight: bold;
-    color: #fff;
-}
-
-#section1 .raman span {
-    font-family: 'Kaushan Script';
-}
-
+/* section2 - 프로필 정보 */
 #section2 {
     background-image: url('https://raman-site.github.io/html/라만1.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #fff;
-    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 60vw;
-    padding-top: 20px;
-}
-.intro-section {
-    background-color: #f9f9f9; /* 배경색 */
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* 높이 설정 */
-}
-
-.intro-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 800px;
-    width: 100%;
-    background-color: #ffffff; /* 배경색 */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 */
-    border-radius: 10px; /* 둥근 모서리 */
     padding: 20px;
 }
 
-.profile-photo {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.profile-details {
+    font-family: 'Yeon Sung', sans-serif; /* 폰트 적용 */
+    text-align: center;
 }
 
-.profile-photo img {
-    width: 150px; /* 이미지 크기 */
-    height: 150px;
-    border-radius: 50%; /* 동그란 이미지 */
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 이미지 그림자 */
-}
-
-.intro-text {
-    flex: 2;
-    margin-left: 20px;
-}
-
-.intro-text h2 {
-    font-size: 24px;
-    font-family: 'Kaushan Script', cursive; /* 폰트 설정 */
+.profile-title {
+    font-size: 5vw;
     margin-bottom: 10px;
 }
 
-.intro-text p {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 8px;
-    font-family: 'Poppins', sans-serif;
+.profile-info {
+    font-size: 2vw;
+    text-align: left;
+    line-height: 1.4;
 }
 
-.intro-text p strong {
-    font-weight: 600;
+/* footer 스타일 */
+footer p {
+    margin: 0 10px;
+}
+
+/* 특정한 영역에서 폰트 충돌이 없도록 주의 */
+.wrapper,
+.wrapper .img-area,
+.wrapper .social-icons a,
+.buttons button {
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.wrapper {
+    position: relative;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
