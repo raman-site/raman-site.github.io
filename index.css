@@ -183,8 +183,8 @@ footer {
 }
 
 .profile-image img {
-    width: 400px;
-    height: 400px;
+    width: 1000px;
+    height: 1000px;
     border-radius: 50%; /* 원형으로 만들기 */
     object-fit: cover;
     border: 3px solid #333;
