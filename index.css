@@ -106,11 +106,60 @@ section {
     height: 60vw;
     padding-top: 20px;
 }
-
-#section3.white-box {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0.5px 0.5px 2px 1px #eee;
+.intro-section {
+    background-color: #f9f9f9; /* 배경색 */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* 높이 설정 */
 }
 
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff; /* 배경색 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 */
+    border-radius: 10px; /* 둥근 모서리 */
+    padding: 20px;
+}
+
+.profile-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo img {
+    width: 150px; /* 이미지 크기 */
+    height: 150px;
+    border-radius: 50%; /* 동그란 이미지 */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 이미지 그림자 */
+}
+
+.intro-text {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.intro-text h2 {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive; /* 폰트 설정 */
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro-text p strong {
+    font-weight: 600;
+}
