@@ -179,9 +179,11 @@ footer {
 }
 
 .profile-image img {
-    width: 700px; /* 크게 조정 */
-    height: 700px; /* 크게 조정 */
-    border-radius: 50%; /* 원형으로 만들기 */
+    width: 45vw;
+    height: 45vw;
+    max-width: 600px; /* 최대 폭 */
+    max-height: 600px; /* 최대 높이 */
+    border-radius: 50%;
     object-fit: cover;
     border: 3px solid #333;
 }
