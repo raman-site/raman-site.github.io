@@ -156,25 +156,11 @@ footer {
     background-color: #f9f9f9;
 }
 
-.profile-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #333;
-}
-
 .intro {
-    flex: 2;
+    flex: 1;
     padding: 20px;
     max-width: 600px;
+    font-family: "Yeon Sung";
 }
 
 .intro h2 {
@@ -185,3 +171,19 @@ footer {
 .intro p {
     font-family: 'Yeon Sung';
 }
+
+.profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 원형으로 만들기 */
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
